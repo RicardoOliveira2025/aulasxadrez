@@ -2,9 +2,17 @@
 
 int main(){
 
-    for (int i = 1;  i <= 8; i++)
-    {
-        printf("%d\n", i);
+    int i = 0;
+
+    while (i <= 10){
+
+        if(i % 2 == 0)
+        {              
+                printf("O numero %d eh par! \n", i);
+        }
+
+        i++;
+
     }
     
     return 0;
