@@ -2,22 +2,16 @@
 
 int main(){
 
-    int numero;
+    int numero, i;
 
-    do {
+    printf("Digite um numero para calcularmos a tabuada...");
+    scanf("%d", &numero);
 
-        printf("Digite um numero par para sair do programa...\n");
-        scanf("%d", &numero);
-
-        if(numero % 2 == 0){
-            printf("%d eh par \n", numero);
-        } else {
-            printf("%d eh impar \n", numero);
-        }
-
-    } while (numero % 2 != 0);
-
-    printf("Voce digitou um numero par, saindo do programa...\n");
+    for (i = 0; i <= 10; i++)
+    {
+        printf("%d x %d = %d \n", i, numero, i * numero);
+    }
+    
 
     return 0;
 }
