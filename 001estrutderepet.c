@@ -2,18 +2,20 @@
 
 int main(){
 
-    int i = 0;
+    int numero;
 
-    while (i <= 10){
+    do {
 
-        if(i % 2 == 0)
-        {              
-                printf("O numero %d eh par! \n", i);
+        printf("Digite um numero par para sair do programa...");
+        scanf("%d", &numero);
+
+        if(numero % 2 == 0){
+            printf("%d eh par", numero);
+        } else {
+            printf("%d eh impar", numero);
         }
 
-        i++;
+    } while (numero % 2 != 0);
 
-    }
-    
     return 0;
 }
